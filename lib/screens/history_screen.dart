@@ -1,5 +1,4 @@
 import 'package:f_calculator/models/calculator.dart';
-import 'package:f_calculator/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class HistoricScreen extends StatefulWidget {
@@ -33,14 +32,6 @@ class _HistoricScreenState extends State<HistoricScreen> {
               ),
             ),
             trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) =>
-                    DetailScreen(calculator: widget.calculator, operation: operations[index])
-                ),
-              ).then((_) => setState(() => {}));
-            },
           );
         },
       ),
